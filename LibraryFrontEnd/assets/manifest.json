@@ -1,0 +1,8 @@
+{
+    "name": "My extension",
+    "permissions": [
+        "tabs",
+        "cookies",
+        "<all_urls>"
+  ]
+  }

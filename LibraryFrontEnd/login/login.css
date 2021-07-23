@@ -1,0 +1,12 @@
+.card-body{
+    margin-top: 8px;    
+}
+
+main{
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+#invaliderror{
+    visibility: hidden;
+}

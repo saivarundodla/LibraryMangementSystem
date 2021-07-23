@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="studenthome.css">
+    <link rel="stylesheet" href="..\bootstrap-5.0.2-dist\css\bootstrap.css">
+    <title>Student Home Page</title>
+</head>
+
+<body class="bg-light">
+    <main class="d-flex align-items-center">
+        <div class="container mt-4 pl-5 pr-5">
+            <div class="row border rounded-3">
+                <div class="col-5 m-0 p-0" id="user">
+                    <div class="container m-3">
+                        <div class="header row">
+                            <img src="..\assets\resume.png" class="offset-3 col-2" width="40px" height="40px"></img>
+                            <p class="col-7 row text-capitalize"></p>
+                        </div>
+                        <div class="main userdetails container mt-5 row">
+                            <button type="button" class="offset-10 col-2 btn btn-outline-secondary" id="edituser" onclick="editUserDetails()">Edit</button>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Email</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Contact Number</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Type</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Books Taken</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Books Approved</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Books Pending</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Books Returned</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Books Not Returned</th>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                            <button type="button" class="col-2 btn btn-outline-secondary" id="saveuser" onclick="saveUserDetails()">Save</button>
+                            <button type="button" class="offset-8 col-2 btn btn-outline-secondary" id="canceluser" onclick="cancelUserDetails()">Cancel</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 card">
+                    <div class="card-title row">
+                        <!-- <p class="offset-2 col-8 fw-bold fs-5">Student Home Page</p> -->
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="container row">
+                            <div class="search col-4">
+                                <input type="text" class="form-control" id="search" name="search" oninput="search(event)"
+                                    placeholder="search" />
+                            </div>
+                            <button class=" offset-4 col-4 btn btn-outline-secondary" id="checked_in" onclick="checked_in()">Checked-In Books</button>
+                            <table class="table bookslist col-12 mt-3 overflow-auto">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Book Name</th>
+                                        <th scope="col">Author</th>
+                                        <th scople="col">Publication</th>                                        
+                                    </tr>
+                                </thead>
+                                <tbody>                                    
+                                </tbody>
+                            </table>
+                            <div class="col-5">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class=" offset-3 col-4 btn btn-outline-secondary" id="request" onclick="requestBook()">Request</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>    
+
+    <script type="text/javascript" src="..\scripts\jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>      
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="studenthome.js"></script>
+    <script type="text/javascript" src="..\assets\constants.js"></script>
+</body>
+
+</html>

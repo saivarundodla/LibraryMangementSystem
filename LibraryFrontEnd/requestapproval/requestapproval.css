@@ -1,0 +1,22 @@
+.card-body{
+    margin-top: 8px;    
+}
+
+main{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#invaliderror{
+    visibility: hidden;
+}
+
+#user p{
+font-family: monospace;
+font-weight: 530;
+font-size:25px
+}
+
+div.main{
+    padding-left: 0px;
+}

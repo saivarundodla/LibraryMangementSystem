@@ -1,0 +1,34 @@
+.card-body{
+    margin-top: 8px;    
+}
+
+main{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#invaliderror{
+    visibility: hidden;
+}
+
+#user p{
+font-family: monospace;
+font-weight: 530;
+font-size:25px
+}
+
+div.main{
+    padding-left: 0px;
+}
+
+.usereditfield:disabled{
+    border-width: 0px 0px 0px 0px;
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.usereditfield{
+    border-width: 0px 0px 3px 0px;
+    background-color: #f8f9fa;
+    color: black;
+}
